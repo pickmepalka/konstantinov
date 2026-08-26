@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f3f0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content="Контакты KONSTANTINOV — свяжитесь с нами для заказа мебели.">
+  <title>Контакты — KONSTANTINOV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-inner">
+  <header class="header header--inner" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">KONSTANTINOV</a>
+      <button class="header__burger" id="burger" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="header__nav" id="nav" aria-label="Основное меню">
+    <ul class="header__menu">
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="services.html">Услуги</a></li>
+      <li><a href="heritage.html">Наследие и мастерство</a></li>
+      <li><a href="projects.html">Проекты</a></li>
+      <li><a href="contact.html">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-content">
+    <section class="section contact">
+      <div class="contact__inner">
+        <div class="contact__info">
+          <span class="section__label">Контакты</span>
+          <h1 class="section__title">Свяжитесь с нами</h1>
+          <div class="contact__details">
+            <div class="contact__item">
+              <span class="contact__label">Телефон</span>
+              <a href="tel:+79031797000">+7 (903) 179-70-00</a>
+            </div>
+            <div class="contact__item">
+              <span class="contact__label">Email</span>
+              <a href="mailto:Mmk2024@yandex.ru">Mmk2024@yandex.ru</a>
+            </div>
+            <div class="contact__item">
+              <span class="contact__label">Юридический адрес</span>
+              <address>Москва, ул. Щербаковская, д.&nbsp;3, помещение&nbsp;1/1</address>
+            </div>
+          </div>
+        </div>
+        <form class="contact__form" action="#" method="post">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" name="phone" placeholder="Телефон">
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="Сообщение" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">KONSTANTINOV</span>
+        <p class="footer__tagline">мебель, которая определяет статус</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="about.html">О нас</a>
+        <a href="services.html">Услуги</a>
+        <a href="heritage.html">Наследие и мастерство</a>
+        <a href="projects.html">Проекты</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 KONSTANTINOV. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
