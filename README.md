@@ -98,12 +98,6 @@ mmkonstantinov.ru
 
 В Settings → Pages включите **Enforce HTTPS**.
 
-### Netlify / Vercel (альтернатива)
-
-1. Зарегистрируйтесь на [netlify.com](https://netlify.com) или [vercel.com](https://vercel.com)
-2. Перетащите папку проекта или подключите GitHub-репозиторий
-3. Деплой произойдёт автоматически
-
 ### Свой домен
 
 У вас есть три домена:
@@ -114,42 +108,12 @@ mmkonstantinov.ru
 | **mmkonstantinov.online** | Зеркало или редирект на .ru |
 | **vibe-house.online** | Отдельный проект / другой бренд |
 
-#### Подключение через Netlify
-
-1. Задеплойте сайт на Netlify
-2. Domain settings → Add custom domain → `mmkonstantinov.ru`
-3. У регистратора домена добавьте DNS-записи, которые покажет Netlify:
-
-```
-
-CNAME www    your-site.netlify.app
-```
-
-4. Для `mmkonstantinov.online` — добавьте как второй домен и настройте редирект на .ru
-
-#### Подключение через Vercel
-
-1. Задеплойте проект на Vercel
-2. Settings → Domains → добавьте `mmkonstantinov.ru`
-3. DNS у регистратора:
-
-```
-
-CNAME www    cname.vercel-dns.com
-```
 
 #### Почта на домене
 
 Чтобы работал `info@mmkonstantinov.ru`, настройте почту у регистратора домена
 (Яндекс 360, Mail.ru для бизнеса, или MX-записи вашего хостинга).
 
-## Что нужно доработать
-
-- [ ] Заменить заглушки на реальные фотографии мебели и интерьеров
-- [ ] Обновить контактные данные (телефон, email, адрес шоурума)
-- [ ] Подключить форму обратной связи (Formspree, Netlify Forms и т.д.)
-- [ ] Добавить ссылки на соцсети
-- [ ] Подключить ваш домен
 
 ## Технологии
 
