@@ -92,13 +92,7 @@ mmkonstantinov.ru
 
 Затем у регистратора домена добавьте DNS-записи:
 
-| Тип | Имя | Значение |
-|-----|-----|----------|
-| A | @ | 185.199.108.153 |
-| A | @ | 185.199.109.153 |
-| A | @ | 185.199.110.153 |
-| A | @ | 185.199.111.153 |
-| CNAME | www | ВАШ_ЛОГИН.github.io |
+
 
 Для **mmkonstantinov.online** или **vibe-house.online** — те же A-записи, в `CNAME` укажите нужный домен.
 
@@ -127,7 +121,7 @@ mmkonstantinov.ru
 3. У регистратора домена добавьте DNS-записи, которые покажет Netlify:
 
 ```
-A     @      75.2.60.5
+
 CNAME www    your-site.netlify.app
 ```
 
@@ -140,7 +134,7 @@ CNAME www    your-site.netlify.app
 3. DNS у регистратора:
 
 ```
-A     @      76.76.21.21
+
 CNAME www    cname.vercel-dns.com
 ```
 
