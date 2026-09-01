@@ -849,20 +849,21 @@ body.page-home .hero {
 }
 
 .contact__honey {
-  position: absolute;
-  left: -9999px;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
+  display: none !important;
 }
 
 .contact__success {
+  display: none;
   padding: 16px 20px;
   border: 1px solid rgba(0, 0, 0, 0.12);
   background: rgba(255, 255, 255, 0.7);
   font-size: var(--fs-md);
   line-height: 1.6;
   color: var(--color-text);
+}
+
+.contact__success.is-visible {
+  display: block;
 }
 
 .form-group input,

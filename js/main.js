@@ -67,7 +67,7 @@ function initContactForm() {
   if (!success) return;
 
   if (new URLSearchParams(window.location.search).get('sent') === '1') {
-    success.hidden = false;
+    success.classList.add('is-visible');
   }
 }
 
