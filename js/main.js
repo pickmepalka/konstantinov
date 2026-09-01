@@ -63,12 +63,17 @@ function initHeader() {
 }
 
 function initContactForm() {
-  const success = document.getElementById('form-success');
-  if (!success) return;
+  if (new URLSearchParams(window.location.search).get('sent') !== '1') return;
 
-  if (new URLSearchParams(window.location.search).get('sent') === '1') {
-    success.classList.add('is-visible');
-  }
+  const form = document.querySelector('.contact__form');
+  if (!form) return;
+
+  const success = document.createElement('p');
+  success.className = 'contact__success is-visible';
+  success.textContent = 'Спасибо! Сообщение отправлено. Мы свяжемся с вами в ближайшее время.';
+  form.prepend(success);
+
+  window.history.replaceState({}, '', window.location.pathname);
 }
 
 function initScrollAnimations() {
