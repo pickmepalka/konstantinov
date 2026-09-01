@@ -42,11 +42,11 @@
           <div class="contact__details">
             <div class="contact__item">
               <span class="contact__label">Телефон</span>
-              <a href="tel:+79031797000">+7 (903) 179-70-00</a>
+              <a href="tel:+79651160767">+7 (965) 116-07-67</a>
             </div>
             <div class="contact__item">
               <span class="contact__label">Email</span>
-              <a href="mailto:Mmk2024@yandex.ru">Mmk2024@yandex.ru</a>
+              <a href="mailto:dizain@mmkonstantinov.ru">dizain@mmkonstantinov.ru</a>
             </div>
             <div class="contact__item">
               <span class="contact__label">Юридический адрес</span>
@@ -54,7 +54,15 @@
             </div>
           </div>
         </div>
-        <form class="contact__form" action="#" method="post">
+        <form class="contact__form" action="https://formsubmit.co/dizain@mmkonstantinov.ru" method="POST">
+          <input type="hidden" name="_subject" value="Новая заявка с сайта KONSTANTINOV">
+          <input type="hidden" name="_next" value="https://mmkonstantinov.ru/contact.html?sent=1">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" class="contact__honey" tabindex="-1" autocomplete="off">
+          <p class="contact__success" id="form-success" hidden>
+            Спасибо! Сообщение отправлено. Мы свяжемся с вами в ближайшее время.
+          </p>
           <div class="form-group">
             <input type="text" name="name" placeholder="Ваше имя" required>
           </div>
@@ -65,7 +73,7 @@
             <input type="tel" name="phone" placeholder="Телефон">
           </div>
           <div class="form-group">
-            <textarea name="message" placeholder="Сообщение" rows="4"></textarea>
+            <textarea name="message" placeholder="Сообщение" rows="4" required></textarea>
           </div>
           <button type="submit" class="btn btn--primary">Отправить</button>
         </form>
