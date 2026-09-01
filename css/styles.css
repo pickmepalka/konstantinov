@@ -848,6 +848,23 @@ body.page-home .hero {
   gap: 20px;
 }
 
+.contact__honey {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.contact__success {
+  padding: 16px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.7);
+  font-size: var(--fs-md);
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
 .form-group input,
 .form-group textarea {
   width: 100%;

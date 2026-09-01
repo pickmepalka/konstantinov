@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initHeader();
   initScrollAnimations();
+  initContactForm();
 });
 
 function initHeader() {
@@ -59,6 +60,15 @@ function initHeader() {
   });
 
   burger.setAttribute('aria-expanded', 'false');
+}
+
+function initContactForm() {
+  const success = document.getElementById('form-success');
+  if (!success) return;
+
+  if (new URLSearchParams(window.location.search).get('sent') === '1') {
+    success.hidden = false;
+  }
 }
 
 function initScrollAnimations() {
