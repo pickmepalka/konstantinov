@@ -79,7 +79,7 @@ function initContactForm() {
 function initScrollAnimations() {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-  const elements = document.querySelectorAll('.section__header, .collection-card, .project-card, .service-item');
+  const elements = document.querySelectorAll('.section__header, .collection-card, .service-item');
   if (!elements.length) return;
 
   const observer = new IntersectionObserver(
