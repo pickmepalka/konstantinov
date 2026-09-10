@@ -622,6 +622,15 @@ body.page-home .hero {
   gap: 6px;
 }
 
+.projects__grid--gallery .project-card--fit img {
+  object-fit: contain;
+  background-color: rgba(245, 243, 240, 0.85);
+}
+
+.projects__grid--gallery .project-card--landscape img {
+  aspect-ratio: 4 / 3;
+}
+
 .project-card {
   display: block;
   overflow: hidden;
@@ -1241,6 +1250,15 @@ body.page-home .hero {
 
   .project-card img {
     aspect-ratio: 4 / 5;
+  }
+
+  .projects__grid--gallery .project-card--fit img {
+    aspect-ratio: auto;
+    height: auto;
+  }
+
+  .projects__grid--gallery .project-card--landscape img {
+    aspect-ratio: 4 / 3;
   }
 
   .project-card__info {
